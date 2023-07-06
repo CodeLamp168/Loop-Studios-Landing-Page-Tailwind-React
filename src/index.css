@@ -38,6 +38,13 @@ section {
     color:white;
 }
 
-.nav-text {
+.nav-text, .info-text p {
     font-family:'Alata'
 }
+
+.info-text h2 {
+    font-family:"Josefin Sans"
+}
+
+
+
