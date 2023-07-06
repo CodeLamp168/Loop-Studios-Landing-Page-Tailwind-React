@@ -19,7 +19,7 @@ export default function Gallery(){
 
 
     return(
-        <section>
+        <section className="border-4 border-green-500">
             <div>
                 <h2>OUR CREATIONS</h2>
                 <button>SEE ALL</button>

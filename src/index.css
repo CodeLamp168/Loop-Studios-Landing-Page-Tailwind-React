@@ -8,3 +8,36 @@
 
     box-sizing:border-box;
 }
+
+section {
+    width:100%;
+}
+
+.hero-sec {
+    background-image:url('./imagelist/mobile/image-hero.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.hero-container {
+    min-height:40vh;
+}
+
+@media(min-width:640px){
+    .hero-sec {
+        background-image:url('./imagelist/desktop/image-hero.jpg')
+    }
+
+    .hero-container {
+        min-height:60vh;
+    }
+}
+
+
+.nav-text, .hero-text {
+    color:white;
+}
+
+.nav-text {
+    font-family:'Alata'
+}

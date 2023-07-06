@@ -37,7 +37,7 @@ export default function Footer(){
 
 
     return(
-        <section>
+        <section className="border-4 border-black">
             <FooterNav/>
             <FooterLinks/>
         </section>
