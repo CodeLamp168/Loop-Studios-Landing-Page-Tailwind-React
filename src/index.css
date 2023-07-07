@@ -69,5 +69,15 @@ h2,   .gallery-image > div > p{
 }
 
 
+.gallery-image > div {
+    transition:transform 300ms ease-in-out;
+}
+
+.gallery-image > div:hover {
+    transform:scale(1.03);
+    z-index:10;
+}
+
+
 
 
