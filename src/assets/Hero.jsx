@@ -11,7 +11,7 @@ export default function Hero(){
     function Hamburger({ toggleNav }) {
         return (
           <>
-            <img className="hamburger-btn cursor-pointer sm:hidden" src="./imagelist/icon-hamburger.svg" alt="404" onClick={toggleNav}/>
+            <img className="hamburger-btn cursor-pointer sm:hidden transition-transform hover:scale-125" src="./imagelist/icon-hamburger.svg" alt="404" onClick={toggleNav}/>
           </>
         );
       }
@@ -21,7 +21,7 @@ export default function Hero(){
           <nav className={`${ isNavVisible ? "" : "hidden" } bg-black flex flex-col justify-start items-start fixed w-screen z-10 top-0 left-0 p-8 h-full sm:hidden`}>
             <div className="flex flex-rows items-center justify-between w-full">
               <img src="./imagelist/logo.svg" alt="404" />
-              <img className="close-btn cursor-pointer" src="./imagelist/icon-close.svg" alt="404" onClick={toggleNav}/>
+              <img className="close-btn cursor-pointer transition-transform hover:scale-125" src="./imagelist/icon-close.svg" alt="404" onClick={toggleNav}/>
             </div>
       
             <div>
