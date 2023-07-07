@@ -39,7 +39,7 @@ export default function Hero(){
 
 
     return(
-        <section className="hero-sec border-4 border-purple-500 h-auto bg-center sm:bg-top">
+        <section className="hero-sec h-auto bg-center sm:bg-top">
           <div className="hero-container max-w-6xl mx-auto px-6 py-12">
              <Header/>
              <HeroText/>

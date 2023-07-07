@@ -1,7 +1,7 @@
 export default function Info(){
 
     return(
-        <section className="border-4 border-indigo-500">
+        <section>
             <div className="relative flex flex-col my-8 mx-2 xl:flex-row lg:my-16 justify-center items-center">
                 <div className="max-w-max">
                     <img className="hidden relative xl:left-24 xl:block w-auto" src="./imagelist/desktop/image-interactive.jpg" alt="404" />

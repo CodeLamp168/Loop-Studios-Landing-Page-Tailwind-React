@@ -10,7 +10,7 @@ import Footer from './assets/Footer'
 function App() {
 
   return (
-    <div className="App flex flex-col items-center border-2 border-red-500 min-h-screen">
+    <div className="App flex flex-col items-center min-h-screen">
       <Hero/>
       <Info/>
       <Gallery/>
