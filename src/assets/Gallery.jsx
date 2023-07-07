@@ -72,10 +72,14 @@ export default function Gallery(){
 
                 <div className="flex flex-col md:flex-row justify-between p-10 items-center">
                     <h2 className="text-center md:text-left font-light text-4xl tracking-wide">OUR CREATIONS</h2>
-                    <button className="mt-6 lg:mt-0 border-2 border-black py-2 w-36 text-lg transition-colors hover:text-white hover:bg-black tracking-wide">SEE ALL</button>
+                    <button className="hidden md:block  lg:mt-0 border-2 border-black py-2 w-36 text-lg transition-colors hover:text-white hover:bg-black tracking-wide">SEE ALL</button>
                 </div>
 
                 <GalleryDivs />
+
+                <div className="flex flex-col md:flex-row justify-between my-10 items-center md:hidden">
+                    <button className="lg:mt-0 border-2 border-black py-2 w-36 text-lg transition-colors hover:text-white hover:bg-black tracking-wide">SEE ALL</button>
+                </div>
 
 
             </div>

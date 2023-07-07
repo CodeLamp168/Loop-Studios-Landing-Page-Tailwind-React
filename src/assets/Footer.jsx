@@ -37,7 +37,7 @@ export default function Footer(){
 
 
     return(
-        <section className="flex flex-col md:flex-row md:justify-between items-center bg-black text-white py-12 md:py-6 md:px-12">
+        <section className="flex flex-col md:flex-row md:justify-between items-center bg-black text-white py-12 md:py-6 md:px-12 md:mt-6">
             <FooterNav/>
             <FooterLinks/>
         </section>
