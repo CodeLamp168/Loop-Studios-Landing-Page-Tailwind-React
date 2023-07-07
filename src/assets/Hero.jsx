@@ -1,12 +1,58 @@
-
+import React, { useState } from 'react';
 
 export default function Hero(){
+
+    const [isNavVisible, setIsNavVisible] = useState(false);
+
+    const toggleNav = () => {
+      setIsNavVisible(!isNavVisible);
+    };
+
+    function Hamburger({ toggleNav }) {
+        return (
+          <>
+            <img className="hamburger-btn cursor-pointer sm:hidden" src="./imagelist/icon-hamburger.svg" alt="404" onClick={toggleNav}/>
+          </>
+        );
+      }
+      
+      function NavHeader({ isNavVisible, toggleNav }) {
+        return (
+          <nav className={`${ isNavVisible ? "" : "hidden" } bg-black flex flex-col justify-start items-start fixed w-screen z-10 top-0 left-0 p-8 h-full sm:hidden`}>
+            <div className="flex flex-rows items-center justify-between w-full">
+              <img src="./imagelist/logo.svg" alt="404" />
+              <img className="close-btn cursor-pointer" src="./imagelist/icon-close.svg" alt="404" onClick={toggleNav}/>
+            </div>
+      
+            <div>
+              <ul className="flex flex-col text-1xl my-20">
+                <a className="nav-text my-4 text-2xl" href="#">
+                  About
+                </a>
+                <a className="nav-text my-4 text-2xl" href="#">
+                  Careers
+                </a>
+                <a className="nav-text my-4 text-2xl" href="#">
+                  Events
+                </a>
+                <a className="nav-text my-4 text-2xl" href="#">
+                  Products
+                </a>
+                <a className="nav-text my-4 text-2xl" href="#">
+                  Support
+                </a>
+              </ul>
+            </div>
+          </nav>
+        );
+      }
 
     function Header(){
 
         return(
             <nav className="flex flex-row justify-between items-center">
                 <img src="./imagelist/logo.svg" alt="404" />
+                <Hamburger toggleNav={toggleNav}/>
     
                 <div className="hidden sm:block">
                     <ul className="flex flex-row text-1xl">
@@ -18,13 +64,15 @@ export default function Hero(){
                     </ul>
                 </div>
             </nav>
+
+            
+
+            
         )
     }
 
 
     function HeroText(){
-
-
 
         return(
 
@@ -40,8 +88,9 @@ export default function Hero(){
 
     return(
         <section className="hero-sec h-auto bg-center sm:bg-top">
-          <div className="hero-container max-w-6xl mx-auto px-6 py-12">
+          <div className="hero-container relative max-w-6xl mx-auto px-6 py-12">
              <Header/>
+             <NavHeader isNavVisible={isNavVisible} toggleNav={toggleNav}/>
              <HeroText/>
           </div>
         </section>

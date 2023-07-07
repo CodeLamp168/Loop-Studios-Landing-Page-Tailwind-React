@@ -1,7 +1,5 @@
 import React from 'react'
 
-
-
 import Hero from './assets/Hero'
 import Info from './assets/Info'
 import Gallery from './assets/Gallery'
