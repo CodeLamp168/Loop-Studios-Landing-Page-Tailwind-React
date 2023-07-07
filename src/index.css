@@ -56,17 +56,16 @@ section {
     width:100%
 }
 
-.nav-text, .info-text p, .gallery-image > div > p {
+.nav-text, .info-text p {
     font-family:'Alata'
 }
-h2 {
+h2,  .gallery-image > div > p{
     font-family:"Josefin Sans"
 }
 
 .gallery-image > div > p {
-    font-family:'Alata';
-    color:hsla(0, 0%, 91%, 0.952);
-    text-shadow: -0px -1px 5px rgb(17, 17, 17);
+    color:hsla(0, 0%, 89%, 0.952);
+    text-shadow: -7px 0px 5px rgba(0, 0, 0, 1);;
 }
 
 
