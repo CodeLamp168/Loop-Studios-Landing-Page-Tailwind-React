@@ -25,10 +25,10 @@ export default function Footer(){
         return(
             <div> 
                 <ul className="flex flex-row justify-center md:justify-end">
-                    <img className="px-2" src="./imagelist/icon-facebook.svg" alt="404" />
-                    <img className="px-2" src="./imagelist/icon-twitter.svg" alt="404" />
-                    <img className="px-2" src="./imagelist/icon-pinterest.svg" alt="404" />
-                    <img className="px-2" src="./imagelist/icon-instagram.svg" alt="404" />
+                    <img className="px-2 cursor-pointer" src="./imagelist/icon-facebook.svg" alt="404" />
+                    <img className="px-2 cursor-pointer" src="./imagelist/icon-twitter.svg" alt="404" />
+                    <img className="px-2 cursor-pointer" src="./imagelist/icon-pinterest.svg" alt="404" />
+                    <img className="px-2 cursor-pointer" src="./imagelist/icon-instagram.svg" alt="404" />
                 </ul>
                 <p className="text-gray-400 mt-5">© 2021 Loopstudios. All rights reserved.</p>
             </div>
