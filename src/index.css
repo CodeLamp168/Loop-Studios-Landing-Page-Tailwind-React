@@ -34,14 +34,14 @@ section {
 }
 
 
-.nav-text, .hero-text {
+ul > a, .hero-text {
     color:white;
     position:relative;
     
 }
 
 /* nav hover effect */
-.nav-text::before {
+.nav-text::before, ul > a::before {
     content:'';
     position:absolute;
     left:0;
@@ -52,14 +52,14 @@ section {
     transition:width 300ms ease-in-out;
 }
 
-.nav-text:hover::before {
+.nav-text:hover::before, ul > a:hover::before {
     width:100%
 }
 
-.nav-text, .info-text p {
+p, button, ul > a {
     font-family:'Alata'
 }
-h2,  .gallery-image > div > p{
+h2,   .gallery-image > div > p{
     font-family:"Josefin Sans"
 }
 
