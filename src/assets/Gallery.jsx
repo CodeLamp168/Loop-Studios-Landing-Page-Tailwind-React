@@ -2,62 +2,29 @@ export default function Gallery(){
 
     function GalleryDivs(){
 
+        function GalleryImg({gallerySrcMobile, gallerySrcDesktop, text}){
+
+            return(
+              <div className="relative  max-w-xl ">
+                <img className="md:hidden" src={gallerySrcMobile} alt="404"/>
+                <img src={gallerySrcDesktop} alt="404" className="hidden md:block filter brightness-75" />
+                <p className="text-2xl   lg:text-3xl xl:text-4xl absolute bottom-3 left-5 md:bottom-6 left-5   uppercase tracking-widest">{text}</p>
+              </div>
+            )
+        }
+
         return(
             <div className="gallery-image grid grid-rows-2 md:grid-cols-4 gap-4 p-4 place-content-center ">
           
 
-                <div className="relative  max-w-xl ">
-                    <img className="md:hidden" src="./imagelist/mobile/image-deep-earth.jpg" alt="404"/>
-                    <img src="./imagelist/desktop/image-deep-earth.jpg" alt="404" className="hidden md:block filter brightness-75" />
-                    <p className="text-2xl lg:text-3xl absolute bottom-3 left-5 md:bottom-6 left-5  max-w-0 uppercase tracking-widest">Deep Earth</p>
-               </div>
-
-               <div className="relative  max-w-xl">
-                    <img className="md:hidden" src="./imagelist/mobile/image-night-arcade.jpg" alt="404"/>
-                    <img src="./imagelist/desktop/image-night-arcade.jpg" alt="404" className="hidden md:block filter brightness-75" />
-                    <p className="text-2xl lg:text-3xl absolute bottom-3 left-5 md:bottom-6 left-5 max-w-0 uppercase tracking-widest">Night Arcade</p>
-               </div>
-
-               <div className="relative  max-w-xl" >
-                    <img className="md:hidden" src="./imagelist/mobile/image-soccer-team.jpg" alt="404"/>
-                    <img src="./imagelist/desktop/image-soccer-team.jpg" alt="404" className="hidden md:block filter brightness-75 " />
-                    <p className="text-2xl lg:text-3xl absolute  bottom-3 left-5 md:bottom-6 left-5  w-44 uppercase tracking-widest">Soccer Team VR</p>
-               </div>
-
-               
-               <div className="relative  max-w-xl">
-                    <img className="md:hidden" src="./imagelist/mobile/image-grid.jpg" alt="404"/>
-                    <img src="./imagelist/desktop/image-grid.jpg" alt="404" className="hidden md:block filter brightness-75" />
-                    <p className="text-2xl lg:text-3xl absolute bottom-3 left-5 md:bottom-6 left-5  max-w-0 uppercase tracking-widest">The Grid</p>
-               </div>
-
-               <div className="relative  max-w-xl">
-                    <img className="md:hidden" src="./imagelist/mobile/image-from-above.jpg" alt="404"/>
-                    <img src="./imagelist/desktop/image-from-above.jpg" alt="404" className="hidden md:block filter brightness-75" />
-                    <p className="text-2xl lg:text-3xl absolute bottom-3 left-5 md:bottom-6 left-5  max-w-1 uppercase tracking-widest">From Up Above VR</p>
-                </div>
-         
-
-             
-
-               <div className="relative  max-w-xl">
-                    <img className="md:hidden" src="./imagelist/mobile/image-pocket-borealis.jpg" alt="404"/>
-                    <img src="./imagelist/desktop/image-pocket-borealis.jpg" alt="404" className="hidden md:block filter brightness-75" />
-                    <p className="text-2xl lg:text-3xl absolute bottom-3 left-5 md:bottom-6 left-5  max-w-0 uppercase tracking-widest">Pocket Borealis</p>
-               </div>
-
-               <div className="relative  max-w-xl">
-                    <img className="md:hidden" src="./imagelist/mobile/image-curiosity.jpg" alt="404"/>
-                    <img src="./imagelist/desktop/image-curiosity.jpg" alt="404" className="hidden md:block filter brightness-75" />
-                    <p className="text-2xl lg:text-3xl absolute bottom-3 left-5 md:bottom-6 left-5 0 max-w-0 uppercase tracking-widest">The Curiosity</p>
-                </div>
-
-                
-               <div className="relative  max-w-xl">
-                    <img className="md:hidden" src="./imagelist/mobile/image-fisheye.jpg" alt="404"/>
-                    <img src="./imagelist/desktop/image-fisheye.jpg" alt="404" className="hidden md:block filter brightness-75" />
-                    <p className="text-2xl lg:text-3xl absolute bottom-3 left-5 md:bottom-6 left-5  max-w-0 uppercase tracking-widest">The Fisheye</p>
-               </div>
+              <GalleryImg gallerySrcMobile={'./imagelist/mobile/image-deep-earth.jpg'} gallerySrcDesktop={'./imagelist/desktop/image-deep-earth.jpg'} text={"Deep Earth"}/>
+              <GalleryImg gallerySrcMobile={'./imagelist/mobile/image-night-arcade.jpg'}  gallerySrcDesktop={'./imagelist/desktop/image-night-arcade.jpg'} text={"Night Arcade"}/>
+              <GalleryImg gallerySrcMobile={'./imagelist/mobile/image-soccer-team.jpg'}  gallerySrcDesktop={'./imagelist/desktop/image-soccer-team.jpg'} text={"Soccer Team VR"}/>
+              <GalleryImg gallerySrcMobile={'./imagelist/mobile/image-grid.jpg'}  gallerySrcDesktop={'./imagelist/desktop/image-grid.jpg'} text={"The Grid"}/>
+              <GalleryImg gallerySrcMobile={'./imagelist/mobile/image-from-above.jpg'}  gallerySrcDesktop={'./imagelist/desktop/image-from-above.jpg'} text={"From Up Above VR"}/>
+              <GalleryImg gallerySrcMobile={'./imagelist/mobile/image-pocket-borealis.jpg'}  gallerySrcDesktop={'./imagelist/desktop/image-pocket-borealis.jpg'} text={"Pocket Borealis"}/>
+              <GalleryImg gallerySrcMobile={'./imagelist/mobile/image-curiosity.jpg'}  gallerySrcDesktop={'./imagelist/desktop/image-curiosity.jpg'} text={"The Curiosity"}/>
+              <GalleryImg gallerySrcMobile={'./imagelist/mobile/image-fisheye.jpg'}  gallerySrcDesktop={'./imagelist/desktop/image-fisheye.jpg'} text={"The Fisheye"}/>
 
      
             </div>
