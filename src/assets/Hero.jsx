@@ -87,7 +87,7 @@ export default function Hero(){
 
 
     return(
-        <section className="hero-sec h-auto bg-center sm:bg-top">
+        <section className="bg-[url('/image-hero-mobile.jpg')] sm:bg-[url('/image-hero-desktop.jpg')] hero-sec h-auto bg-center sm:bg-top">
           <div className="hero-container relative max-w-6xl mx-auto px-6 py-12">
              <Header/>
              <NavHeader isNavVisible={isNavVisible} toggleNav={toggleNav}/>
