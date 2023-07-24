@@ -9,6 +9,5 @@ Uses:
 Utilizes flex layouts 💪
 
 
-![loop studio design preview](./design/desktop-design.jpg)
 
 
